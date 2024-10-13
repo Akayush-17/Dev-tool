@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import UnitConverter from './functions/UnitConverter';
 import ColorPicker from './functions/ColorPicker';
 import FontFinder from './functions/FontFinder';
+import MarginPaddingFinder from './functions/MarginPaddingFinder';
 
 const Sidebar = () => {
   const [activeTab, setActiveTab] = useState('unitConverter');
@@ -11,7 +12,7 @@ const Sidebar = () => {
       case 'unitConverter':
         return <UnitConverter />;
       case 'colorPicker':
-        return <ColorPicker />;
+        return <MarginPaddingFinder />;
       case 'fontFinder':
         return <FontFinder />;
       default:
